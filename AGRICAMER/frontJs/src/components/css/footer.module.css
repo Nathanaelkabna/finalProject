@@ -1,0 +1,280 @@
+.mainfooter{
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0;
+    background-color: #121212;
+    color: #fff;
+}
+.foot1{
+    display: flex;
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+.foot1 h1{
+    color: #ffff00;
+}
+.foot1 footer{
+    padding: 1em;
+    width: 100%;
+}
+.foot2{
+    width: 80%;
+    flex: 1;
+    display: flex;
+    background-color: #121212;
+    padding: 1em 0;
+    border-top: 3px solid rgb(43, 173, 112);
+    align-self: center;
+}
+
+.google{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.textGoogle{
+    width: 50%;
+    font-size: 75%;
+    padding: 0 .5em;
+    text-align: center;
+}
+.google a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    border-radius: .5em;
+    box-shadow: 0 5px 10px black;
+    width: 15%;
+    padding: .3em;
+    
+}
+.google a img{
+    width: 25%;
+    align-self: center;
+}
+
+.adresseContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.adresseContent span:last-child img{
+    padding: 1em .2em;
+}
+.infosContent{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    align-items: center;
+}
+.menuContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menuContent div{
+    display: flex;
+    flex-direction: column;
+}
+.menuContent div a{
+    color: #fff;
+    padding: .5em 0;
+}
+.menuContent div a:hover{
+    color: rgb(43, 173, 112);
+    transition: ease-in-out .5s;
+}
+.subscribeContent{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.subscribeContent div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+@media (max-width:1031px) {
+    .infosContent{
+        display: none;
+    }
+}
+@media (max-width:781px) {
+    h1{
+        display: none;
+    }
+    .foot1{
+        display: flex;
+        flex-direction: column;
+    }
+    .foot1 footer{
+        display: block;
+        text-align: center;
+    }
+    .menuContent div{
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center;
+    }
+    .menuContent div a:first-child{
+        text-decoration: underline;
+    }
+    .menuContent div a{
+        padding: 0 1em;
+    }
+}
+
+
+
+
+
+@media (max-width: 950px) {
+    .google a{
+        width: 25%;
+        padding: .5em;
+    }
+    .google a img{
+        width: 30%;
+        align-self: center;
+    }
+    .play{
+        font-size: .8em;
+    }
+    
+}
+
+@media (max-width: 801px) {
+    .google a{
+        width: 20%;
+    }
+    .google a img{
+        width: 30%;
+        align-self: center;
+    }
+    .play{
+        font-size: .8em;
+    }
+}
+
+@media (max-width: 714px) {
+
+    .google a img{
+        width: 25%;
+    }
+}
+@media (max-width: 682px) {
+    .google a{
+        width: 25%;
+    }
+}
+@media (max-width: 558px) {
+    .google a{
+        width: 30%;
+    }
+}
+@media (max-width: 476px) {
+    .google a{
+        width: 35%;
+    }
+}
+@media (max-width: 417px) {
+    .google a{
+        width: 40%;
+    }
+}
+@media (max-width: 373px) {
+    .google a{
+        width: 45%;
+    }
+}
+
+.scrollToTop{
+    font-size: 30px;
+    background-color: white;
+    padding: .1em .4em;
+    border-radius: 5em;
+    position: absolute;
+    right: .5em;
+}
+
+.scrollToTop i{
+    color: green;
+    animation: toTop 1s infinite forwards ease-in-out;
+}
+
+@keyframes toTop {
+    from{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(-50px);
+        opacity: 1;
+    }
+}
+/* 
+
+
+
+.mainfooter{
+    background-image: linear-gradient(
+        to bottom,
+        rgb(0, 0, 0, 0.1),
+        rgb(0, 0, 0, 0.2),
+        rgb(0, 0, 0,0.3)
+    );
+    display: flex;
+    flex-direction: column;
+}
+.mainfooter > div:first-child{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer{
+
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+    font-size: 18px;
+    color: black;
+  }
+  .icons img{
+    width: 2em;
+    margin-bottom: 25px;
+  }
+  .icons a{
+    padding: 0 10px;
+  }
+
+.direction{
+    position: absolute;
+    right: 0;
+    padding: 1em 1em;
+    margin: 1em;
+    background-color: white;
+    border-radius: 5em;
+    box-shadow: 0px 1px 10px black;
+    
+}
+.direction img{
+    animation: pointer 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes pointer {
+    from{
+        opacity: 0;
+        transform: translateY(0) rotateX(180deg) ;
+    }
+    to{
+        opacity: 1;
+        transform: translateY(-5px) rotateX(180deg) ;
+    }
+} */

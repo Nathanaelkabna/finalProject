@@ -1,0 +1,147 @@
+.mobile{
+    display: flex;
+    padding: 2em;
+    background-color: inherit;
+    color: inherit;
+    background-image: linear-gradient(
+        to bottom,
+        rgb(255, 255, 255,0),
+        rgb(43, 173, 112,0.2),
+        rgb(43, 173, 112, 0.5)
+      );
+}
+.phone{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    animation: rotate 1.5s infinite;
+    transform-origin: center center;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(-7deg);
+    }to{
+        transform: rotate(7deg);
+    }
+}
+.google{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.textGoogle{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+}
+.google a{
+    align-self: center;
+    justify-content: center;
+    width: 40%;
+    display: flex;
+    background-color: #000;
+    margin-top: 1em;
+    padding: .5em;
+    color: #fff;
+    box-shadow: 0 5px 10px black;
+    border-radius: .3em;
+}
+.google a img{
+    width: 25%;
+}
+.play{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.2em;
+}
+
+@media (max-width: 950px) {
+    .google a img{
+        width: 20%;
+    }
+    .play{
+        font-size: 1em;
+    }
+    .textGoogle{
+        font-size: 30px;
+    }
+
+    
+}
+
+@media (max-width: 911px) {
+
+    .google a{
+        width: 40%;
+    }
+    .google a img{
+        width: 30%;
+        align-self: center;
+    }
+    .play{
+        font-size: .8em;
+    }
+}
+
+
+@media (max-width: 801px) {
+
+    .mobile{
+        flex-direction: column;
+    }
+    .phone{
+        padding: 2em 0;
+    }
+    .textGoogle{
+        font-size: 20px;
+        justify-content: center;
+    }
+    .google a{
+        width: 20%;
+    }
+    .google a img{
+        width: 30%;
+        align-self: center;
+    }
+    .play{
+        font-size: .8em;
+    }
+}
+
+@media (max-width: 714px) {
+
+    .google a img{
+        width: 25%;
+    }
+}
+@media (max-width: 682px) {
+    .google a{
+        width: 25%;
+    }
+}
+@media (max-width: 558px) {
+    .google a{
+        width: 30%;
+    }
+}
+@media (max-width: 476px) {
+    .google a{
+        width: 35%;
+    }
+}
+@media (max-width: 417px) {
+    .google a{
+        width: 40%;
+    }
+}
+@media (max-width: 373px) {
+    .google a{
+        width: 45%;
+    }
+}

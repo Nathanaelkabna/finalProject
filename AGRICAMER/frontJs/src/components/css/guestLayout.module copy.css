@@ -1,0 +1,54 @@
+.landingPage {
+  height: 100%;
+  padding: 5em 0;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.59),
+      rgba(0, 0, 0, 0.26)
+    ),
+    url("AgriCamerImg/12.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner {
+  width: 50%;
+  padding: 2em;
+  border-radius: 1em;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  color: black;
+  background-color: white;
+}
+.banner h2 {
+  text-align: center;
+}
+
+
+.landingPage *{
+    perspective: 50px;
+    perspective-origin: center center;
+    animation-name: fadeInDown;
+    animation-duration: .3s;
+}
+
+@keyframes fadeInDown {
+    0%{
+        opacity: 0;
+        transform: translateZ(-20px);
+        
+    }
+    100%{
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}

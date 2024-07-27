@@ -1,0 +1,47 @@
+.landingPage {
+  height: 700px;
+  padding: 5em 0;
+  background: url("../../../public/images/11.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner {
+  width: 50%;
+  padding: 2em;
+  border-radius: 1em;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+  color: black;
+  background-color: white;
+}
+.banner h2 {
+  text-align: center;
+}
+
+
+.landingPage *{
+    perspective: 50px;
+    perspective-origin: center center;
+    animation-name: fadeInDown;
+    animation-duration: .3s;
+}
+
+@keyframes fadeInDown {
+    0%{
+        opacity: 0;
+        transform: translateZ(-20px);
+        
+    }
+    100%{
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}

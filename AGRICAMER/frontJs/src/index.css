@@ -1,0 +1,89 @@
+.monAsideLight{
+  background-color: #2B2A33;
+  border-radius: .2em;
+  margin-top: 1em;
+  color: white;
+}
+.monAsideLight div:first-child{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: .3em;
+  background-color: #2bad70;
+}
+.monAsideLight div:first-child div img{
+  height: 40px;
+  cursor: pointer;
+}
+
+.aside-btn{
+  text-decoration: none;
+  background-color: transparent;
+  color: #2bad70;
+  padding: .5em;
+  border-radius: 5em;
+  cursor: pointer;
+}
+
+.aside-btn span{
+  display: none;
+}
+
+.monAsideLight div:last-child{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em 1em ;
+}
+.monAsideLight div:last-child a{ 
+  text-align: center;
+  flex: 1;
+  width: 100%;
+  color: #fff;
+  padding: 1em 0;
+  border-bottom: 2px solid #fff;
+}
+
+
+
+.monAsideDark{
+  background-color: #fff;
+  border-radius: .2em;
+  margin-top: 1em;
+}
+.monAsideDark div:first-child{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: .3em;
+  background-color: #2bad70;
+}
+.monAsideDark div:first-child div img{
+  height: 40px;
+  cursor: pointer;
+}
+.aside-btn{
+  text-decoration: none;
+  background-color: transparent;
+  color: #2bad70;
+  margin: 0 1em;
+  padding: .5em;
+  cursor: pointer;
+}
+.aside-btn span{
+  display: none;
+}
+.monAsideDark div:last-child{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em 1em ;
+}
+.monAsideDark div:last-child a{ 
+  text-align: center;
+  flex: 1;
+  width: 100%;
+  color: #000;
+  padding: 1em 0;
+  border-bottom: 2px solid #000;
+}

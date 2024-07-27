@@ -1,0 +1,28 @@
+.welcomePage{
+    background-image: linear-gradient(
+        to top,
+        rgb(255, 255, 255,0),
+        rgb(43, 173, 112),
+        rgb(43, 173, 112)
+      );
+      display: flex;
+      padding:3em 2em ;
+      align-items: center;
+}
+.form{
+    background-color: white;
+    border-radius: 1em;
+    flex: 1;
+    padding: 1em;
+}
+.form h2{
+    text-align: center;
+}
+@keyframes moveUpDown {
+    from{
+        transform: translateY(-10px);
+    }
+    to{
+        transform: translateY(10px);
+    }
+}

@@ -1,0 +1,332 @@
+.welcomePage {
+  background-image: linear-gradient(
+    to top,
+    rgb(255, 255, 255, 0),
+    rgb(43, 173, 112, 0.5),
+    rgb(43, 173, 112),
+    rgb(43, 173, 112)
+  );
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  animation: fadeInRight 2s ease-in-out;
+}
+.products h1 {
+  margin-top: 1em;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: #2bad70;
+}
+.productItems {
+  display: inline-block;
+}
+.productItems div {
+  display: inline-block;
+  width: 33%;
+  padding: 0 1em;
+  margin: 1em 0;
+}
+.productItems img {
+  width: 100%;
+  border-radius: 5px;
+}
+.productItems img:hover {
+  cursor: pointer;
+  transition: ease-in-out;
+  animation: moveUpDown 1s;
+}
+
+@keyframes moveUpDown {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+.productItems div p {
+  text-align: justify;
+  margin: 1em 0;
+}
+.productItems div div {
+  display: flex;
+  width: 100%;
+  padding: 0;
+}
+.productItems div a {
+  background-color: #dc3545;
+  padding: 0.7em;
+  color: black;
+  border-radius: 0.2em;
+  box-shadow: 0 5px 5px black;
+  width: 100%;
+  text-align: center;
+}
+.productItems div a:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(43, 173, 112);
+  transition: ease-in-out 0.5s;
+}
+
+@keyframes fadeInRight {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.farmers {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  padding: 2em;
+  animation: fromRight 2s ease-in-out;
+}
+@keyframes fromRight {
+  from {
+    transform: translateX(150px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.farmers img {
+  width: 50%;
+  border-radius: 5px;
+}
+.farmers div h1,
+.deliveryMens div h1 {
+  text-align: center;
+  color: #2bad70;
+}
+.farmers div,
+.deliveryMens div {
+  width: 50%;
+  margin: 0em 1em;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+.farmers div a,
+.deliveryMens div a {
+  margin: 0em;
+  padding: 1em;
+  border-radius: 0.2em;
+  background-color: #2bad70;
+  box-shadow: 0 5px 5px black;
+  color: #fff;
+  text-align: center;
+}
+
+.deliveryMens {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  width: 100%;
+  padding: 2em;
+  animation: fromLeft 2s ease-in-out;
+}
+@keyframes fromLeft {
+  from {
+    transform: translateX(-150px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.deliveryMens img {
+  width: 50%;
+  border-radius: 5px;
+}
+
+@media (max-width: 1020px) {
+  .products h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 950px) {
+  .google a img {
+    width: 20%;
+  }
+  .play {
+    font-size: 1em;
+  }
+  .textGoogle {
+    font-size: 30px;
+  }
+  .productItems {
+    display: inline-block;
+  }
+  .productItems div {
+    display: inline-block;
+    width: 50%;
+    padding: 1em;
+  }
+  .farmers div,
+  .deliveryMens div {
+    padding: 0;
+    margin: 0 1em;
+  }
+}
+
+@media (max-width: 911px) {
+  .products {
+    padding: 0;
+  }
+  .farmers,
+  .deliveryMens {
+    flex-direction: column-reverse;
+  }
+  .farmers div,
+  .deliveryMens div {
+    width: 100%;
+    margin: 1em 0;
+  }
+  .farmers div a,
+  .deliveryMens div a {
+    margin: 0;
+  }
+  .farmers img,
+  .deliveryMens img {
+    width: 100%;
+    border-radius: 5px;
+    margin: 1em 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .farmers,
+  .deliveryMens {
+    padding: 2em;
+  }
+}
+
+@media (max-width: 801px) {
+  .products {
+    padding: 1em 0.5em;
+  }
+  .productItems div {
+    display: block;
+    width: 100%;
+  }
+}
+
+@keyframes farm {
+  from {
+    transform: translateX(500px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 986px) {
+  .slogan {
+    font-size: 50px;
+  }
+  .image {
+    display: block;
+  }
+  .image div {
+    display: inline-block;
+    width: 50%;
+    margin: 1em 0;
+  }
+  .image div img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  .mobile h1 {
+    font-size: 30px;
+  }
+
+  .farmer div h1,
+  .deliverymen div h1 {
+    font-size: 30px;
+  }
+  .farmer,
+  .deliverymen {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: first baseline;
+  }
+  .farmer div,
+  .deliverymen div {
+    padding: 2em;
+  }
+}
+@media (max-width: 819px) {
+  .lorem {
+    display: none;
+  }
+  .image {
+    display: flex;
+    flex-direction: column;
+  }
+  .image div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1em 0;
+  }
+  .mobile h1 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 791px) {
+  .banner div:first-child {
+    width: 75%;
+    flex: 1 1;
+  }
+  .banner img {
+    width: 100%;
+    flex: 1;
+  }
+}
+@media (max-width: 719px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .btn {
+    width: 100%;
+  }
+  .btnC,
+  .btnS {
+    display: block;
+    margin: 1em 0;
+    box-shadow: 0px 2px 5px black;
+  }
+  .mobile {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    padding: 0 2em;
+  }
+  .mobile h1 {
+    margin: 2em 0;
+    font-size: 18px;
+  }
+}

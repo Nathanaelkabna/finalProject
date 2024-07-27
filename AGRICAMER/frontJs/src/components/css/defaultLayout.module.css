@@ -1,0 +1,16 @@
+body,
+html {
+  height: 100%;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  box-sizing: border-box;
+}
+
+.darkTheme {
+  background-color: #2B2A33;
+  color: white;
+}
+.lightTheme {
+  background-color: #ffffff;
+  color: inherit;
+}
